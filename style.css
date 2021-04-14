@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Nobile:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nobile";
+}
+body {
+  background: #333449;
+  max-width: 100%;
+}
+.images-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.images-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#sky {
+  z-index: 1;
+}
+#crescent {
+  z-index: 2;
+  left: unset !important;
+}
+#ramadan {
+  z-index: 3;
+  left: unset !important;
+}
+#mountain {
+  z-index: 4;
+}
+#ground {
+  z-index: 5;
+}
+
+.text-container {
+  z-index: 6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 10em;
+  height: 65vh;
+}
+.text-container ul {
+  list-style: none;
+}
+.text-container li {
+  font-size: 1rem;
+  padding: 5px;
+}
+.text-container li a {
+  text-decoration: none;
+  color: rgb(247, 71, 71);
+}
